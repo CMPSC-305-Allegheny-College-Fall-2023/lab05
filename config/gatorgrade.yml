@@ -1,0 +1,56 @@
+# --> check the MD file
+- src/db_build.txt:
+    - description: --> Ensure that the file src/db_build.txt exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs and remove the TODO markers in the file src/db_build.txt
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Delete the 'Add Your Name Here' prompt in the file src/db_build.txt
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# --> check the MD file
+- writing/queries.md:
+    - description: --> Ensure that the file writing/queries.md exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs and remove the TODO markers in the file writing/queries.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Delete the 'Add Your Name Here' prompt in the file writing/queries.md
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# --> check the MD file
+- writing/reflection.md:
+    - description: --> Ensure that the file writing/reflection.md exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs and remove the TODO markers in the file writing/reflection.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Delete the 'Add Your Name Here' prompt in the file writing/reflection.md
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# --> check that the number of commits in the Git repository is beyond a threshold
+- description: Have at least a specific minimum number of commits (3) in repository
+  check: CountCommits
+  options:
+    count: 3
