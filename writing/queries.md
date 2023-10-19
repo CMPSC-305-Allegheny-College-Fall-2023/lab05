@@ -30,4 +30,4 @@ Add Your Name Here
 - Query code :`TODO`
 - Short output: `TODO``
 
-### Did you remember to add your name to the top of this document?
+### Did you remember to put your name to the top of this document?
